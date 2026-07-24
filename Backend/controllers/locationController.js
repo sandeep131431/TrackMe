@@ -17,7 +17,7 @@ const saveLocation = (req, res) => {
 };
 
 const getLocation = (req, res) => {
-
+    console.log("hello");
     const data = locations.get(req.params.id);
 
     if (!data) {
