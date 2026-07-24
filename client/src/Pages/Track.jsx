@@ -22,7 +22,7 @@ function Track() {
 
         try {
           const response = await fetch(
-            "https://track-me-beta.vercel.app/api/location",
+            "https://track-me-gweb.vercel.app/api/location",
             {
               method: "POST",
               headers: {
