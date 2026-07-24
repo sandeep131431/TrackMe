@@ -16,7 +16,7 @@ app.post("/api/link", (req, res) => {
 
     res.json({
         id,
-        url: `http://localhost:5173/track/${id}`
+        url: `https://track-me-lu6g.vercel.app/track/${id}`
     });
 
 });
