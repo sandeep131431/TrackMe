@@ -46,13 +46,15 @@ function Home() {
       const response = await fetch(
         `https://track-me-gweb.vercel.app/${linkId}`
       );
-
+      
       if (response.status === 404) {
         alert("Location Not Found");
         return;
       }
 
       const data = await response.json();
+
+      console.log(data);
 
       window.open(
         `https://www.google.com/maps?q=${data.latitude},${data.longitude}`,
