@@ -44,7 +44,7 @@ function Home() {
 
     try {
       const response = await fetch(
-        `https://track-me-gweb.vercel.app/api/${linkId}`
+        `https://track-me-gweb.vercel.app/api/location/${linkId}`
       );
       
       if (response.status === 404) {
